@@ -22,4 +22,9 @@ var $players = $pX = 'X', $pO = 'O', $player = 1 ;
         $player == 2 ? (e.target.innerHTML = $pO, e.target.classList.add("O"), $player=1) : alert("Error");
     }
 
-
+    function cursor(e){
+        e.target.classList.add("hover");
+    }
+    function nocursor(e){
+        e.target.classList.remove("hover");
+    }
